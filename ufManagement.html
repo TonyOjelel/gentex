@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Urban Farmer Management - Masajja Project</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<!-- Navigation Bar -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<a class="navbar-brand" href="#">Masajja Project</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Urban Farmer Registration</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Urban Farmer Management</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Produce Listing</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Booking and Ordering</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Payments</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container mt-5">
+		<h2>Urban Farmer Management</h2>
+		<hr>
+
+		<!-- Search Form -->
+		<form class="form-inline mb-3">
+			<div class="input-group mr-2">
+				<div class="input-group-prepend">
+					<span class="input-group-text">Search</span>
+				</div>
+				<input type="text" class="form-control" placeholder="Enter keyword">
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+
+		<!-- Farmer List Table -->
+                    <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Full Name</th>
+                            <th scope="col">Ward</th>
+                            <th scope="col">Gender</th>
+                            <th scope="col">Date of Birth</th>
+                            <th scope="col">Activities</th>
+                            <th scope="col">NIN</th>
+                            <th scope="col">Phone Number</th>
+                            <th scope="col">Directions to Home</th>
+                            <th scope="col">Residence Type</th>
+                            <th scope="col">Period of Stay</th>
+                            <th scope="col">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>John Doe</td>
+                            <td>Ward 1</td>
+                            <td>Male</td>
+                            <td>01/01/1980</td>
+                            <td>Maize farming</td>
+                            <td>1234567890</td>
+                            <td>+256 777 123 456</td>
+                            <td>Plot 123, Street A, Kampala</td>
+                            <td>Owned</td>
+                            <td>5 years</td>
+                            <td>
+                              <button type="button" class="btn btn-primary">Edit</button>
+                              <button type="button" class="btn btn-danger">Delete</button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Jane Doe</td>
+                            <td>Ward 2</td>
+                            <td>Female</td>
+                            <td>02/02/1985</td>
+                            <td>Poultry farming</td>
+                            <td>2345678901</td>
+                            <td>+256 777 234 567</td>
+                            <td>Plot 234, Street B, Kampala</td>
+                            <td>Rented</td>
+                            <td>2 years</td>
+                            <td>
+                              <button type="button" class="btn btn-primary">Edit</button>
+                              <button type="button" class="btn btn-danger">Delete</button>
+                            </td>
+                          </tr>
+                          <!-- Add more rows for additional farmers as needed -->
+                        </tbody>
+                      </table>
+                      
