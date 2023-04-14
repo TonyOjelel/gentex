@@ -6,7 +6,7 @@
 }
 
 html{
-	background-image: url('farmer.jpg'); 
+	background-image: url('/assets/farmer.jpg'); 
 	background-size: cover;
 }
 
