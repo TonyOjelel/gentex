@@ -25,10 +25,21 @@ async function login(event) {
     });
     const data = await response.json();
     if (data.status == 200) {
-      alert(data.message); // change to toast
+      console.log(data.data.role, '>>>>>>>>>>')
       setTimeout(function () {
-        location.href = "/ui/products/producelistings.html";
-      }, 500);
+      if (data.data.role === "ao"){
+        location.href = "/ui/aodashboard.html";
+      }
+      if (data.data.role === "fo"){
+        location.href = "/ui/fodashboard.html";
+      }
+      if (data.data.role === "uf"){
+        location.href = "/ui/UFdashboard.html";
+      }
+      if (data.data.role === "user"){
+        location.href = "/ui/Products.html";
+      }
+    }, 500);
     }
   } catch (error) {
     console.log(error);

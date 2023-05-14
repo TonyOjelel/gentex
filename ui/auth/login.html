@@ -9,7 +9,7 @@
   <body>
     <div class="main-agileinfo">
       <div class="agileits-top">
-        <h1>Login</h1>
+        <h2>Login</h2>
         <form action="#" method="post">
           <input
             class="text email"
@@ -19,7 +19,6 @@
             placeholder="Email"
             required=""
           />
-          <br />
           <input
             class="text"
             type="password"
@@ -27,19 +26,24 @@
             id="password"
             placeholder="Password"
             required=""
-          />
-          <div class="wthree-text">
-            <div class="clear"></div>
-          </div>
-          <input type="submit" value="LOGIN" id="submit"/>
-        </form>
+          /><br>
+          <input type="submit" value="Submit" id="submit"/>
+        </form><br>
         <p>
-          Don't have an account?
-          <a href="register.html"><span>Sign up now!</span></a>
+          Haven't registered?
+          <a href="register.html"><span>Sign up!</span></a>
         </p>
       </div>
     </div>
     <script src="../../js/main.js"></script>
     <script src="../../js/login.js"></script>
+    <script src="../assets/js/demo.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      // Javascript method's body can be found in assets/js/demos.js
+
+      demo.showNotification();
+    });
+  </script>
   </body>
 </html>

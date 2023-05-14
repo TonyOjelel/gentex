@@ -10,16 +10,6 @@ html{
 	background-size: cover;
 }
 
-ul{
-	float: right;
-	list-style-type: none;
-	margin-top: 25px;
-}
-
-ul li{
-	display: inline-block;
-}
-
 ul li a{
 	text-decoration: none;
 	color: #fff;
@@ -33,6 +23,19 @@ ul li a:hover{
 	color: #000;
 }
 
+h1 a{
+	text-decoration: none;
+	color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+
+h1 :hover{
+	background-color: #fff;
+	color: #000;
+}
+
 .title{
 	position: absolute;
 	top:40%;
@@ -42,7 +45,7 @@ ul li a:hover{
 
 .title h1{
 	color:#fff;
-	font-size: 35px;
+	font-size: 27px;
 	text-align: center;
 }
 
@@ -76,7 +79,7 @@ ul li a:hover{
 
 /*Start of Sign up AND login form css*/
 
-h1 {
+h2 {
     font-size: 2.5em;
     text-align: center;
     color: #fff;
@@ -144,7 +147,7 @@ input[type="submit"]:hover {
     -o-transition: .5s all;
     -ms-transition: .5s all;
     transition: .5s all;
-    background: rgb(32, 191, 32);
+    background: rgb(12, 176, 12);
 }
   
 .agileits-top p {
@@ -166,87 +169,7 @@ input[type="submit"]:hover {
 .agileits-top p a:hover {
     color: rgb(32, 191, 32);
 }
-  
-  /*-- //main --*/
-  
-.form-group label{
-    font-size: 1em;
-    color:#fff;
-    font-weight: 300;
-    position: relative;
-}
+/*-- main --*/
 
-
-/*-- checkbox --*/
-.wthree-text label {
-    font-size: 1em;
-    color: #fff;
-    font-weight: 300;
-    position: relative;
-  }
-  
-input.checkbox {
-    background: rgb(32, 191, 32);
-    width: 1em;
-    height: 1em;
-    
-}
-  
-input.checkbox:before {
-    content: "";
-    position: absolute;
-    width: 1.2em;
-    height: 1.2em;
-    background: inherit;
-    cursor: pointer;
-}
-
-input.checkbox:after {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0;
-    z-index: 1;
-    width: 1.2em;
-    height: 1.2em;
-    border: 1px solid #fff;
-    -webkit-transition: .4s ease-in-out;
-    -moz-transition: .4s ease-in-out;
-    -o-transition: .4s ease-in-out;
-    transition: .4s ease-in-out;
-}
-  
-input.checkbox:checked:after {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    height: .5rem;
-    border-color: #fff;
-    border-top-color: transparent;
-    border-right-color: transparent;
-  }
-  
-  /*-- //checkbox --*/
-
-
-input[type="submit"] {
-      margin: 2em 0 1.5em;
-      letter-spacing: 3px;
-}
-  
-
-@media(max-width:375px) {
-    .agileits-top p {
-      letter-spacing: 0px;
-    }
-}
-  
-@media(max-width:320px) {
-    .main-w3layouts {
-      padding: 1.5em 0 0;
-}
-  
   /*End of Sign up AND login form css*/
 

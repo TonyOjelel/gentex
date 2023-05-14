@@ -29,7 +29,7 @@ async function register(event) {
     });
     const data = await response.json();
     if (data.status == 201) {
-      alert(data.message); //display toast
+      // submitToast(data.message); //display toast
       setTimeout(function () {
         location.href = "/ui/auth/login.html";
       }, 500);
@@ -38,3 +38,10 @@ async function register(event) {
     console.log(error);
   }
 }
+
+// var submitToast = document.getElementById('submit');
+// submitToast.addEventListener('click', function() {
+//   var toastEl = document.getElementById('liveToast');
+//   var toast = new bootstrap.Toast(toastEl);
+//   toast.show();
+// });
